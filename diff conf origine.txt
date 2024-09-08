@@ -1,0 +1,83 @@
+# 
+
+# diff
+
+# version
+# Betaflight / MATEKF411RX (M41R) 4.0.5 Aug  1 2019 / 12:07:19 (839661b20) MSP API: 1.41
+
+# start the command batch
+batch start
+
+board_name MATEKF411RX
+manufacturer_id 
+
+# name
+
+# resources
+
+# timer
+
+# dma
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+
+# beeper
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# map
+
+# serial
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 2 1700 2100 0 0
+aux 1 1 0 900 1300 0 0
+aux 2 13 3 1700 2100 0 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# display_name
+
+# master
+set acc_calibration = 190,42,-40
+set rx_spi_protocol = FRSKY_D
+set motor_pwm_protocol = DSHOT300
+set align_board_yaw = -45
+set small_angle = 180
+set frsky_spi_tx_id = 255,245
+set frsky_spi_offset = -42
+set frsky_spi_bind_hop_data = 0,30,60,91,120,150,180,210,5,35,65,95,125,155,185,215,10,40,70,100,130,160,190,221,15,45,75,105,135,165,195,225,20,50,80,110,140,170,200,230,25,55,85,115,145,175,205,0,0,0
+
+# profile
+profile 0
+
+
+# rateprofile
+rateprofile 0
+
+
+# end the command batch
+batch end
+
+# 
