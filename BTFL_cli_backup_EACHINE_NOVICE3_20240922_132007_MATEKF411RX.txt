@@ -1,0 +1,87 @@
+defaults nosave
+
+
+# version
+# Betaflight / STM32F411 (S411) 4.5.1 Jul 27 2024 / 07:22:38 (77d01ba3b) MSP API: 1.46
+# config rev: 11c7dec
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name MATEKF411RX
+manufacturer_id MTKS
+mcu_id 002d00294b56500620313553
+signature 
+
+# name: Eachine Novice3
+
+# feature
+feature -RX_SERIAL
+feature -AIRMODE
+feature TELEMETRY
+feature RSSI_ADC
+feature OSD
+feature RX_SPI
+
+# serial
+serial 1 2048 115200 57600 0 115200
+
+# aux
+aux 0 0 1 1800 2100 0 0
+aux 1 36 3 1800 2100 0 0
+
+# vtxtable
+vtxtable bands 5
+
+# master
+set acc_hardware = NONE
+set acc_calibration = 80,-46,-114,1
+set min_check = 1000
+set rx_spi_protocol = FRSKY_X_LBT_V2
+set dshot_idle_value = 606
+set motor_pwm_protocol = DSHOT600
+set beeper_dshot_beacon_tone = 2
+set small_angle = 180
+set osd_vtx_channel_pos = 2083
+set osd_warnings_pos = 14740
+set osd_battery_usage_pos = 35204
+set osd_disarmed_pos = 2421
+set osd_esc_tmp_pos = 2115
+set osd_efficiency_pos = 2436
+set osd_displayport_device = AUTO
+set osd_canvas_width = 30
+set osd_canvas_height = 13
+set vcd_video_system = AUTO
+set frsky_spi_tx_id = 223,170,14
+set frsky_spi_offset = -26
+set frsky_spi_bind_hop_data = 3,223,208,193,178,163,148,133,118,103,90,73,58,45,28,13,233,221,203,188,175,158,143,128,113,98,83,68,53,38,23,8,228,213,198,183,168,153,138,123,108,93,78,63,48,33,18,0,0,0
+set frsky_x_rx_num = 1
+set craft_name = Eachine Novice3
+set pilot_name = Juju
+
+profile 0
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
